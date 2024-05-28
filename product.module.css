@@ -1,0 +1,217 @@
+.tomatoIcon {
+  align-self: stretch;
+  height: 310px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.watermelon1 {
+  position: relative;
+  line-height: 130%;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 118px;
+}
+.grownInTracy {
+  position: relative;
+  font-size: var(--font-size-base);
+line-height: 150%;
+  color: var(--color-gray-300);
+}
+.watermelonParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.lb {
+  position: relative;
+  line-height: 130%;
+  font-weight: 600;
+  color: var(--color-darkolivegreen);
+  text-align: right;
+  display: inline-block;
+  min-width: 92px;
+}
+.frameGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.card,
+.watermelon,
+.watermelonInner {
+  align-self: stretch;
+  box-sizing: border-box;
+}
+.watermelonInner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+ padding: 0 var(--padding-5xl);
+  max-width: 100%;
+}
+.card,
+.watermelon {
+  border-radius: var(--br-5xl);
+  background-color: var(--color-linen);
+  overflow: hidden;
+}
+.watermelon {
+  border: 2px solid var(--color-gainsboro-200);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-2xl);
+  gap: var(--gap-5xl);
+  max-width: 100%;
+}
+.card {
+  height: 416px;
+  position: relative;
+  border: 3px solid var(--color-gainsboro-200);
+  flex-shrink: 0;
+}
+.productCardsHeader {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  min-width: 257px;
+  max-width: 100%;
+}
+.card1 {
+  height: 416px;
+  flex: 0.9848;
+position: relative;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-linen);
+  border: 3px solid var(--color-gainsboro-200);
+  box-sizing: border-box;
+  overflow: hidden;
+  min-width: 256px;
+  max-width: 100%;
+}
+.productCardsHeaderParent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  max-width: calc(100% - 427px);
+  flex-shrink: 0;
+}
+.card2 {
+  align-self: stretch;
+  height: 416px;
+  position: relative;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-linen);
+  border: 3px solid var(--color-gainsboro-200);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.cardWrapper {
+  height: 615px;
+  width: 395px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 448px 0 0;
+  max-width: calc(100% - 853px);
+}
+.cardWrapper,
+.frameParent,
+.products {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.frameParent {
+  width: 1248px;
+  height: 615px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: var(--gap-13xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-400);
+  font-family: var(--font-libre-franklin);
+}
+.products {
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-13xl);
+  background-color: var(--color-floralwhite);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-13xl) var(--padding-xl) 0;
+  gap: var(--gap-21xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1050px) {
+  .productCardsHeaderParent {
+    display: none;
+  }
+  .cardWrapper {
+    max-width: 100%;
+ }
+}
+@media screen and (max-width: 1000px) {
+  .productCardsHeaderParent {
+    max-width: 100%;
+  }
+  .cardWrapper {
+    display: none;
+    padding-top: 291px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 725px) {
+  .frameParent {
+    height: auto;
+    gap: var(--gap-base);
+  }
+  .products {
+    gap: var(--gap-xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .lb,
+  .watermelon1 {
+    font-size: var(--font-size-base);
+    line-height: 21px;
+  }
+  .frameGroup {
+    flex-wrap: wrap;
+  }
+  .productCardsHeader {
+    gap: var(--gap-base);
+  }
+  .card1 {
+    flex: 1;
+  }
+  .productCardsHeaderParent {
+    gap: var(--gap-base);
+  }
+  .cardWrapper {
+padding-top: 189px;
+    box-sizing: border-box;
+  }
